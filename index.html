@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.js">
 </head>
 <body>
-    <div>
-        <p>abcdxyz</p>
-    </div>
-    
+    <script>
+        let a =Number(prompt('Mhap mot so bat ki:')) ;
+        if( a%2 === 0){
+            console.log(`${a} la so chan!`);
+        }else{
+            console.log(` ${a} la so le!`)
+        }
+
+        let x=Number(prompt('nhap so'));
+        let y=Number(prompt('nhap so'));
+        let Chuvi = (x+y)*2;
+        let Dientich = x*y;
+        console.log('Chu vi',Chuvi);
+        console.log('Dien tich',Dientich);
+
+        let b,c,d =Number (prompt('nhap so'));
+        let denta= c*c - 4*b*d;
+        console.log( ` Gia tri cua:${b}x^2 + ${c}x + ${d} =`);
+        if(denta>0){
+            let x1= -c + math.sqrt(denta)/2*b;
+            let x2= -c - math.sqrt(denta)/2*b;
+            console.log(`Phuong trinh  ${b}*x^2+ ${c}*x + d = 0 co 2 nghiem phan biet: ${x1},${x2}`);
+        }else if(denta==0) {
+            let x = -$c/2*b
+            console.log( `phuong trinmh ${b}*x^2 + ${c}*x +c=0 co nghiem kep : ${x} `);
+        }else{
+            console.log( `phuong trinmh ${b}*x^2 + ${c}*x +c=0 vo nghiem`);
+        }
+        //1.1
+        let useinput =prompt('Nhap vao mot gia tri');
+        console.log('du lieu ban nhap:',typeof useinput);
+        //1.2
+        let num1 = Number(prompt("Nhập số thứ nhất:"));
+        let num2 = Number(prompt("Nhập số thứ hai:"));
+
+        if (isNaN(num1) || isNaN(num2)) {
+         console.log("Vui lòng nhập số hợp lệ!")
+        } else {
+        console.log("Tổng hai số là:", num1 + num2);}
+
+
+    </script>    
 </body>
 </html>
