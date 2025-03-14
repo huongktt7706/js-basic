@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <script>
+        let a = Number(prompt('Nhập một số bất kỳ:'));
+        if (a % 2 === 0) {
+            console.log(`${a} là số chẵn!`);
+        } else {
+            console.log(`${a} là số lẻ!`);
+        }
+
+        let x = Number(prompt('Nhập chiều dài:'));
+        let y = Number(prompt('Nhập chiều rộng:'));
+        let ChuVi = (x + y) * 2;
+        let DienTich = x * y;
+        console.log('Chu vi:', ChuVi);
+        console.log('Diện tích:', DienTich);
+
+        let b = Number(prompt('Nhập hệ số b:'));
+        let c = Number(prompt('Nhập hệ số c:'));
+        let d = Number(prompt('Nhập hệ số d:'));
+        let delta = c * c - 4 * b * d;
+        console.log(`Giá trị của phương trình: ${b}x^2 + ${c}x + ${d} = 0`);
+
+        if (delta > 0) {
+            let x1 = (-c + Math.sqrt(delta)) / (2 * b);
+            let x2 = (-c - Math.sqrt(delta)) / (2 * b);
+            console.log(`Phương trình có hai nghiệm phân biệt: x1 = ${x1}, x2 = ${x2}`);
+        } else if (delta === 0) {
+            let x = -c / (2 * b);
+            console.log(`Phương trình có nghiệm kép: x = ${x}`);
+        } else {
+            console.log('Phương trình vô nghiệm.');
+        }
+
+        // 1.1 Kiểm tra kiểu dữ liệu nhập vào
+        let userInput = prompt('Nhập vào một giá trị:');
+        console.log('Dữ liệu bạn nhập:', typeof userInput);
+
+        // 1.2 Kiểm tra số hợp lệ trước khi tính tổng
+        let num1 = Number(prompt("Nhập số thứ nhất:"));
+        let num2 = Number(prompt("Nhập số thứ hai:"));
+
+        if (isNaN(num1) || isNaN(num2)) {
+            console.log("Vui lòng nhập số hợp lệ!");
+        } else {
+            console.log("Tổng hai số là:", num1 + num2);
+        }
+    </script>    
+</body>
+</html>
